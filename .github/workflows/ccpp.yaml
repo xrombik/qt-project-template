@@ -10,13 +10,17 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: configure
-      run: cmake -B ./build
-    - name: make
-      run: |
-        cd build
-        make
-    #- name: make check
-    #  run: make check
-    #- name: make distcheck
-    #  run: make distcheck
+    -name: build
+        run:
+            chmod +x ./build.sh
+            ./build.sh
+    #- name: configure
+    #  run: cmake -B ./build
+    #- name: make
+    #  run: |
+    #    cd build
+    #    make
+    ##- name: make check
+    ##  run: make check
+    ##- name: make distcheck
+    ##  run: make distcheck
