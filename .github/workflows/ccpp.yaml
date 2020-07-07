@@ -11,9 +11,9 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: build
-        run: |
-            chmod +x ./build.sh
-            ./build.sh
+       run: |
+         chmod +x ./build.sh
+         ./build.sh
     #- name: configure
     #  run: cmake -B ./build
     #- name: make
