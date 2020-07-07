@@ -12,7 +12,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: install-deps
       run: |
-        chmod +x ./build.sh
+        chmod +x ./install-deps.sh
         ./install-deps.sh
     - name: build
       run: |
