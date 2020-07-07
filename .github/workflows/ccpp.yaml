@@ -10,6 +10,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    - name: install-deps
+      run: |
+        chmod +x ./build.sh
+        ./install-deps.sh
     - name: build
       run: |
         chmod +x ./build.sh
